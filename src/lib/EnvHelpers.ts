@@ -1,5 +1,6 @@
 
 import * as fs from "fs";
+import * as path from "path";
 
 export function env(variable: string, defaultValue?: string): string {
 	const value = process.env[variable];
@@ -13,9 +14,9 @@ export function env(variable: string, defaultValue?: string): string {
 }
 
 export function envFile(variable: string, defaultValue?: string) {
-	const filename = env(variable, defaultValue);
+	const filename = path.resolve(env(variable, defaultValue));
 	try {
-		return fs.readFileSync(filename);
+		return fs.readFileSync(filename); 
 	} catch (err) {
 		throw new Error("Failed to read file: " + filename);
 	}
