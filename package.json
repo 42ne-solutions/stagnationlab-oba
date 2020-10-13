@@ -1,0 +1,20 @@
+{
+  "name": "stagnationlab-oba",
+  "version": "0.0.1",
+  "description": "Open Banking Authenticator for StagnationLab",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@types/request-promise-native": "^1.0.17",
+    "apollo-server": "^2.18.2",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "typed-vault": "^1.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitri Peterson",
+  "license": "UNLICENSED"
+}
