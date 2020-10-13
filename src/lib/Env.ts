@@ -10,8 +10,8 @@ export const Env = {
 
 		SEB: {
 			endpoint: env("OBA_SEB_ENDPOINT", "https://test.api.ob.baltics.sebgroup.com"),
-			certFile: envFile("OBA_SEB_CERT_FILE", __dirname + "/../../assets/client.crt"),
-			keyFile: envFile("OBA_SEB_KEY_FILE", __dirname + "/../../assets/client.key"),
+			certFile: envFile("OBA_SEB_CERT_FILE"),
+			keyFile: envFile("OBA_SEB_KEY_FILE"),
 		}
 
 	}

@@ -8,8 +8,8 @@ exports.Env = {
     providers: {
         SEB: {
             endpoint: EnvHelpers_1.env("OBA_SEB_ENDPOINT", "https://test.api.ob.baltics.sebgroup.com"),
-            certFile: EnvHelpers_1.envFile("OBA_SEB_CERT_FILE", __dirname + "/../../assets/client.crt"),
-            keyFile: EnvHelpers_1.envFile("OBA_SEB_KEY_FILE", __dirname + "/../../assets/client.key"),
+            certFile: EnvHelpers_1.envFile("OBA_SEB_CERT_FILE"),
+            keyFile: EnvHelpers_1.envFile("OBA_SEB_KEY_FILE"),
         }
     }
 };

@@ -18,6 +18,10 @@ OBA_SEB_CERT_FILE="/path/to/client.cert"
 # Mandatory, path to your KEY file provided by SEB
 OBA_SEB_KEY_FILE="/path/to/client.key"
 ```
+You'll also need to fetch required modules by entering project directory and issuing:
+```sh
+npm install
+```
 
 #### Usage
 
